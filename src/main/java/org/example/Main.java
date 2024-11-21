@@ -40,7 +40,7 @@ public class Main implements RequestHandler<Map<String, Object>, Map<String, Str
             String urlDataJson = objectMapper.writeValueAsString(urlData);
 
             PutObjectRequest request = PutObjectRequest.builder()
-                    .bucket("url-uuid-bucket")
+                    .bucket("bucket")
                     .key(shortUrlCode + ".json")
                     .build();
 
